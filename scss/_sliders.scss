@@ -1,0 +1,22 @@
+.slider-one {
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 100%;
+
+    @media(min-width: 992px) {
+        grid-template-areas: 'left' 'right';
+        grid-template-columns: 50% 50%;
+    }
+
+    .left {
+        grid-area: 'left';
+    }
+
+    .right {
+        grid-area: 'right';
+    }
+}
+
+.slider-two {
+    background-color: $light_grey;
+}
