@@ -25,6 +25,7 @@ if( !empty($block['align']) ) {
 }
 
 $bg_image = get_field('background_image');
+$bg_image_two = get_field('background_image_two');
 //$image = get_field('overlay_image');
 $logo = get_field('logo');
 $logo_link = get_field('logo_link');
@@ -32,44 +33,12 @@ $contact = get_field('contact_link');
 
 ?>
 
-    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> relative">
         <div class="hero-slider">
-            <div style="background-image: url('<?php echo $bg_image; ?>');"></div>
-            <div style="background-image: url('<?php echo $bg_image; ?>');"></div>
+            <div class="slide bg-cover bg-center bg-no-repeat h-96 md:h-670" style="background-image: url('<?php echo $bg_image; ?>');"></div>
+            <div class="slide bg-cover bg-center bg-no-repeat h-96 md:h-670" style="background-image: url('<?php echo $bg_image_two; ?>');"></div>
         </div>
-            <div class="hero__container">
-
-                <?php 
-
-                    $logo_link = get_field('logo_link');
-                
-                    if( $logo_link ): 
-                        $logo_link_url = $logo_link['url'];
-                        $logo_link_target = $logo_link['target'] ? $logo_link['target'] : '_self';
-                    ?>
-
-                    <a href="<?php echo esc_url( $logo_link_url ); ?>" target="<?php echo esc_attr( $logo_link_target ); ?>"><img class="logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>"></a>
-
-                <?php endif; ?>
-
-
-                <?php 
-
-                    $contact = get_field('contact_link');
-
-                    if( $contact ): 
-                        $contact_url = $contact['url'];
-                        $contact_title = $contact['title'];
-                        $contact_target = $contact['target'] ? $contact['target'] : '_self';
-                    ?>
-
-                    <a class="contact d-none d-lg-block" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
-
-                <?php endif; ?>
-<!-- 
-                <div class="hero__text" id="svg-animate"></div> -->
-
-
+        <div class="hero__text absolute inset-0 max-w-4xl mx-auto" id="svg-animate"></div>
     </section>
 
 

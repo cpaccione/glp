@@ -15,12 +15,13 @@
     var initializeBlock = function($block) {
         $block.find('.hero-slider').slick({
             // mobileFirst: true,
-            dots: true,
+            dots: false,
             arrows: false,
             infinite: true,
             autoplay: true,
             fade: true,
-            speed: 500,
+            autoplaySpeed: 3000,
+            speed: 1000,
             // adaptiveHeight: true,
             cssEase: 'linear',
             // responsive: [
@@ -55,6 +56,7 @@
             initializeBlock( $(this) );
         });
     });
+
 
     //Initialize dynamic block preview (editor).
     if( window.acf ) {

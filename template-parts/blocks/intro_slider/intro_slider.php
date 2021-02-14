@@ -33,12 +33,12 @@ $body = get_field('body');
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-        <div class="container">
+        <div class="glp-container">
             <div class="row">
                 <div class="col-12 text-md-center">
                     <div class="slider-text">
-                        <h2 class="pb-4 pt-5"><?php echo $title; ?></h2>
-                        <p class="pb-4 pb-md-5"><?php echo $body; ?></p>
+                        <h2 class="text-3xl md:text-6xl text-center max-w-6xl mx-auto font-avant"><?php echo $title; ?></h2>
+                        <p class="text-mont pb-4 pb-md-5 text-base md:text-xl text-center"><?php echo $body; ?></p>
 
                         <?php 
 
