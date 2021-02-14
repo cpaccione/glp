@@ -38,16 +38,20 @@ Template Name: Glenstar LP Suburbs
         </div>
     </section>
 
-    <section class="slider-one intro">
-        <div class="col left">
-            <h2>Convenience</h2>
-            <p>Business priorities are shifting and getting employees back together in a safe and colaborative environment that is closer to home has never been a better option. See how office space at a suburban-Chicago Glenstar property can change the way you get to work.</p>
-        </div>
-        <div class="col right">
-            <div class="intro__slider">
-                <div class="intro__slider__one">your content</div>
-                <div class="intro__slider__one">your content</div>
-                <div class="intro__slider__one">your content</div>
+    <section class="slt">
+        <div class="container">
+            <div class="slider-left-text-grid intro">
+                <div class="col left">
+                    <h2>Convenience</h2>
+                    <p>Replace the stresses of a downtown commute with a short drive to the office and hassle-free surface or garage parking when you get there. With multiple properties in convenient locations throughout Chicago’s northwest suburbs, getting to work has never been easier, quicker or more enjoyable.</p>
+                </div>
+                <div class="col right">
+                    <div class="slider-right">
+                        <div class="slider-right__slide"></div>
+                        <div class="slider-right__slide"></div>
+                        <div class="slider-right__slide"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

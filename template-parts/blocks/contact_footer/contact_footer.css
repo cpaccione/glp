@@ -1,0 +1,81 @@
+.contact-footer {
+  background-color: #fdb71c;
+}
+
+.contact-footer h2 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.contact-footer p {
+  color: #ffffff;
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+
+.contact-footer .name {
+  font-size: 20px;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-footer .job-title, .contact-footer .phone {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-footer a {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.contact-footer .contact-photo {
+  max-width: 50%;
+}
+
+@media (min-width: 992px) {
+  .contact-footer .contact-photo {
+    max-width: 80%;
+  }
+}
+
+.contact-footer .contact-grid {
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 0 2rem 0 2rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .contact-footer .contact-grid {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-footer .contact-grid {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+.contact-footer .contact-grid h2 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.contact-footer .contact-grid p {
+  color: #ffffff;
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=contact_footer.css.map */

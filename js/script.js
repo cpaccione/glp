@@ -10,5 +10,15 @@ jQuery(document).ready(function ($) {
         cssEase: 'linear',
     });
 
+    $('.slider-right').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        fade: true,
+        speed: 500,
+        cssEase: 'linear',
+    });
+
 
   });

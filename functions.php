@@ -145,18 +145,20 @@ function glp_scripts() {
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap', array(), '1.0.0', 'all');
 
+	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css', array(), '5.0.0', 'all' );
+
 	wp_enqueue_style( 'glp-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'glp-style', 'rtl', 'replace' );
 
-	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick-theme.css', array(), '1.0.0', 'all' );
+	// wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick-theme.css', array(), '1.0.0', 'all' );
 
-	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick.css', array(), '1.0.0', 'all' );
+	// wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick.css', array(), '1.0.0', 'all' );
 
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/scss/style.css', array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/scss/style.css', array(), '1.0.1', 'all' );
 
-	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick.js', array('jquery'), '1.0.0', true );
+	// wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/plugins/slick-1.8.1/slick/slick.js', array('jquery'), '1.0.0', true );
 
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true );
+	// wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'glp_scripts' );
@@ -186,5 +188,13 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+// ACF Block Support
+require get_template_directory() . '/inc/acf-block-support.php';
+
+// Check if function exists and hook into setup.
+if( function_exists('acf_register_block_type') ) {
+    add_action('acf/init', 'register_acf_block_types');
 }
 

@@ -1,0 +1,51 @@
+.slider-text h2 {
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+.slider-text p {
+  max-width: 55ch;
+  margin: 0 auto;
+}
+
+.intro-slider .intro-slider__slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 327px;
+}
+
+@media (min-width: 768px) {
+  .intro-slider .intro-slider__slide {
+    height: 742px;
+  }
+}
+
+.intro-slider .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.intro-slider .slick-dots {
+  bottom: 20px;
+}
+
+.intro-slider .slick-dots li {
+  margin-right: 1rem;
+}
+
+.intro-slider .slick-dots li button {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 34px;
+  height: 6px;
+  border-radius: 0;
+  padding: 3px;
+}
+
+.intro-slider .slick-dots li button:before {
+  content: none;
+}
+
+.intro-slider .slick-dots .slick-active button {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=intro_slider.css.map */
