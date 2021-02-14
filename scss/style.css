@@ -157,19 +157,6 @@ p {
   background-color: #ffffff;
 }
 
-.hero {
-  background-image: url("../images/home_hero_mobile@2x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    background-image: url("../images/home_hero@2x.jpg");
-  }
-}
-
 .hero .hero__container {
   position: relative;
   max-width: 1436px;

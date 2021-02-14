@@ -166,6 +166,8 @@ function register_acf_block_types() {
 
             wp_enqueue_script( 'slick-slider-script', get_template_directory_uri() . '/template-parts/blocks/hero/slick-1.8.1/slick/slick.js', array(), '1.0.0', true );
 
+            wp_enqueue_script( 'custom-slick', get_template_directory_uri() . '/template-parts/blocks/hero/hero.js', array(), '1.0.0', true );
+
         },
         'icon' => array(
             // Specifying a background color to appear with the icon e.g.: in the inserter.

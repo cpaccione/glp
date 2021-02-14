@@ -32,40 +32,44 @@ $contact = get_field('contact_link');
 
 ?>
 
-    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image: url('<?php echo $bg_image; ?>');">
-        <div class="hero__container">
+    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+        <div class="hero-slider">
+            <div style="background-image: url('<?php echo $bg_image; ?>');"></div>
+            <div style="background-image: url('<?php echo $bg_image; ?>');"></div>
+        </div>
+            <div class="hero__container">
 
-            <?php 
+                <?php 
 
-                $logo_link = get_field('logo_link');
-            
-                if( $logo_link ): 
-                    $logo_link_url = $logo_link['url'];
-                    $logo_link_target = $logo_link['target'] ? $logo_link['target'] : '_self';
-                ?>
+                    $logo_link = get_field('logo_link');
+                
+                    if( $logo_link ): 
+                        $logo_link_url = $logo_link['url'];
+                        $logo_link_target = $logo_link['target'] ? $logo_link['target'] : '_self';
+                    ?>
 
-                <a href="<?php echo esc_url( $logo_link_url ); ?>" target="<?php echo esc_attr( $logo_link_target ); ?>"><img class="logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>"></a>
+                    <a href="<?php echo esc_url( $logo_link_url ); ?>" target="<?php echo esc_attr( $logo_link_target ); ?>"><img class="logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>"></a>
 
-            <?php endif; ?>
+                <?php endif; ?>
 
 
-            <?php 
+                <?php 
 
-                $contact = get_field('contact_link');
+                    $contact = get_field('contact_link');
 
-                if( $contact ): 
-                    $contact_url = $contact['url'];
-                    $contact_title = $contact['title'];
-                    $contact_target = $contact['target'] ? $contact['target'] : '_self';
-                ?>
+                    if( $contact ): 
+                        $contact_url = $contact['url'];
+                        $contact_title = $contact['title'];
+                        $contact_target = $contact['target'] ? $contact['target'] : '_self';
+                    ?>
 
-                <a class="contact d-none d-lg-block" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
+                    <a class="contact d-none d-lg-block" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
 
-            <?php endif; ?>
+                <?php endif; ?>
+<!-- 
+                <div class="hero__text" id="svg-animate"></div> -->
 
-            <div class="hero__text" id="svg-animate"></div>
 
-        </div> 
     </section>
 
 
