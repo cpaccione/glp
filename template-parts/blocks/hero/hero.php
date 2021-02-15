@@ -39,6 +39,38 @@ $contact = get_field('contact_link');
             <div class="slide bg-cover bg-center bg-no-repeat h-96 md:h-670" style="background-image: url('<?php echo $bg_image_two; ?>');"></div>
         </div>
         <div class="hero__text absolute inset-0 max-w-4xl mx-auto" id="svg-animate"></div>
+
+        <?php 
+
+        $logo_link = get_field('logo_link');
+
+        if( $logo_link ): 
+            $logo_link_url = $logo_link['url'];
+            $logo_link_target = $logo_link['target'] ? $logo_link['target'] : '_self';
+        ?>
+
+            <div class="logo-container absolute top-4 left-4 md:top-12 md:left-12">
+                <a href="<?php echo esc_url( $logo_link_url ); ?>" target="<?php echo esc_attr( $logo_link_target ); ?>"><img class="logo w-40 md:w-full" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>"></a>
+            </div>
+
+        <?php endif; ?>
+
+        <?php 
+
+            $contact = get_field('contact_link');
+
+            if( $contact ): 
+                $contact_url = $contact['url'];
+                $contact_title = $contact['title'];
+                $contact_target = $contact['target'] ? $contact['target'] : '_self';
+            ?>
+
+            <div class="button-wrap absolute top-12 right-12">
+                <a class="font-avant text-white border-2 py-2 px-4 inline-block uppercase border-white hover:bg-gray-dark hover:text-white hidden md:block mt-2" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
+            </div>
+
+        <?php endif; ?>
+
     </section>
 
 

@@ -10,6 +10,17 @@ module.exports = {
         'avant': ['itc-avant-garde-gothic-pro', 'sans-serif'],
         'mont': ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        gray: {
+          dark: '#414042',
+          DEFAULT: '#A7A9AC',
+          light: '#f1f2f2',
+        },
+        yellow: {
+          DEFAULT: '#fdb71c',
+        },
+      },
+      
     },
   },
   variants: {

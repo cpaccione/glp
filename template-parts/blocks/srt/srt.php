@@ -31,16 +31,18 @@ $body = get_field('body');
 
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> py-5">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> py-12">
 
-        <div class="container">
-            <div class="row">
-            <div class="col-md-6 flex-column align-self-center order-md-2 ps-md-5">
-                <h2 class="pb-4"><?php echo $title; ?></h2>
-                <p class="pb-4 pb-md-0"><?php echo $body; ?></p>
+        <div class="glp-container px-5">
+            <div class="row grid lg:grid-flow-col grid-cols-1 lg:grid-cols-2 lg:gap-x-16">
+            <div class="col lg:col-start-2 flex self-center">
+                <div class="wrap pb-8 lg:pb-0 lg:pl-16">
+                <h2 class="pb-4 font-avant text-gray-dark text-3xl lg:text-5xl"><?php echo $title; ?></h2>
+                <p class="text-gray text-base lg:text-xl"><?php echo $body; ?></p>
+                </div>
             </div>
 
-            <div class="col-md-6 order-md-1">
+            <div class="col lg:col-start-1">
                 <div class="right">
                     <div class="slider-left">
                         

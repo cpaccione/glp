@@ -14,39 +14,14 @@
      */
     var initializeBlock = function($block) {
         $block.find('.hero-slider').slick({
-            // mobileFirst: true,
             dots: false,
             arrows: false,
             infinite: true,
             autoplay: true,
             fade: true,
-            autoplaySpeed: 3000,
-            speed: 1000,
-            // adaptiveHeight: true,
+            autoplaySpeed: 3500,
+            speed: 500,
             cssEase: 'linear',
-            // responsive: [
-            //     {
-            //         breakpoint: 0,
-            //         settings: {
-            //             arrows: true,
-            //             dots: true
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 800,
-            //         settings: {
-            //             arrows: true,
-            //             dots: false
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 1200,
-            //         settings: {
-            //             arrows: true,
-            //             dots: false
-            //         }
-            //     },
-            // ]
         });     
     }
 

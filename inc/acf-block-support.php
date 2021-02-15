@@ -121,11 +121,6 @@ function register_acf_block_types() {
         'category'          =>  __('layout'),
         'mode'              => 'edit',
         'post_types'        => array('page'),
-        'enqueue_assets'    => function() {
-
-            wp_enqueue_style( 'video-embed', get_template_directory_uri() . '/template-parts/blocks/video_embed/video_embed.css', array(), '1.0.0', 'all' );
-
-        },
         'icon' => array(
             // Specifying a background color to appear with the icon e.g.: in the inserter.
             'background' => '#45545C',
@@ -189,11 +184,11 @@ function register_acf_block_types() {
         'category'          =>  __('layout'),
         'mode'              => 'edit',
         'post_types'        => array('page'),
-        'enqueue_assets'    => function() {
+        // 'enqueue_assets'    => function() {
 
-            wp_enqueue_style( 'contact-footer', get_template_directory_uri() . '/template-parts/blocks/contact_footer/contact_footer.css', array(), '1.0.0', 'all' );
+        //     wp_enqueue_style( 'contact-footer', get_template_directory_uri() . '/template-parts/blocks/contact_footer/contact_footer.css', array(), '1.0.0', 'all' );
 
-        },
+        // },
         'icon' => array(
             // Specifying a background color to appear with the icon e.g.: in the inserter.
             'background' => '#45545C',

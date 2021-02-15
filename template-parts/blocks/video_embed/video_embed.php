@@ -34,19 +34,23 @@ $bc = get_field('body_text_color');
 
 ?>
 
-    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-        <div class="container">
+    <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> py-16">
+        <div class="glp-container px-5">
 
-            <div class="text_intro intro">
-                <h2><?php echo $title; ?></h2>
-                <p><?php echo $body; ?></p>
+            <div class="text_intro intro md:text-center">
+                <h2 class="text-white text-3xl md:text-5xl md:max-w-lg mx-auto font-avant pb-6"><?php echo $title; ?></h2>
+                <p class="text-white font-mont mx-auto max-w-2xl pb-12"><?php echo $body; ?></p>
             </div>
-        
-            <div class="iframe-container">
-                <?php echo $embed; ?>
-            </div>
-
         </div>
+
+        <div class="glp-container">
+            <div class="w-full md:w-3/4 mx-auto">
+                <div class="iframe-container">
+                    <?php echo $embed; ?>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <style>
@@ -56,7 +60,11 @@ $bc = get_field('body_text_color');
     }
 
     #<?php echo $id; ?> h2 {
-        color: <?php echo $tc; ?>;
+        color: <?php echo $tc; ?> !important;
+    }
+
+    #<?php echo $id; ?> p {
+        color: <?php echo $bc; ?> !important;
     }
     
     </style>

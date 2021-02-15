@@ -11,15 +11,12 @@
 
 ?>
 
-<section class="suburb-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 py-4">
-                <small>&copy; <?php echo date('Y'); ?> Glenstar Properties</small>
-            </div>
+    <section class="suburb-footer bg-yellow py-5">
+        <div class="glp-container px-5">
+            <p class="text-white font-mont text-base md:text-xl">&copy; <?php echo date('Y'); ?> Glenstar Properties</p>
         </div>
-    </div>
-</section>
+    </section>
+
 <?php wp_footer(); ?>
 
 </body>

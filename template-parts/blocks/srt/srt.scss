@@ -21,38 +21,38 @@ $grey : #a7a9ac;
     // }
 }
 
-.slider-right-text-grid {
-    display: grid;
-    grid-template-areas: "left" "right";
-    grid-template-columns: 100%;
+// .slider-right-text-grid {
+//     display: grid;
+//     grid-template-areas: "left" "right";
+//     grid-template-columns: 100%;
 
-    @media(min-width: 1100px) {
-        grid-template-areas: "right left";
-        grid-template-columns: 55% 45%;
-    }
+//     @media(min-width: 1100px) {
+//         grid-template-areas: "right left";
+//         grid-template-columns: 55% 45%;
+//     }
 
-    .left {
-        grid-area: left;
+//     .left {
+//         grid-area: left;
         
-        @media(min-width: 768px) {
-            display: flex;
-            align-self: center;
-            flex-direction: column;
-        }
+//         @media(min-width: 768px) {
+//             display: flex;
+//             align-self: center;
+//             flex-direction: column;
+//         }
 
-        p {
-            line-height: 2.136363;
+//         p {
+//             line-height: 2.136363;
 
-            @media(min-width: 1100px) {
-                max-width: 36ch;
-            }
-        }
-    }
+//             @media(min-width: 1100px) {
+//                 max-width: 36ch;
+//             }
+//         }
+//     }
 
-    .right {
-        grid-area: right;
-    }
-}
+//     .right {
+//         grid-area: right;
+//     }
+// }
 
 .slider-left {
     background-color: $light_grey;
@@ -71,7 +71,7 @@ $grey : #a7a9ac;
 
     // Slick Slider Dots
 .slick-dotted.slick-slider {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .slick-dots {
