@@ -145,7 +145,7 @@ function glp_scripts() {
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap', array(), '1.0.0', 'all');
 
-	wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/css/tailwind.css', array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/css/tailwind.css', array(), '1.0.3', 'all' );
 
 	wp_enqueue_style( 'glp-style', get_template_directory_uri() . '/style.css', array(), '1.0.2', 'all' );
 

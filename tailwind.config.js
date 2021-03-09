@@ -1,5 +1,14 @@
 module.exports = {
-  purge: [],
+  purge: [
+    "./*.php",
+    "./template-parts/blocks/*.php",
+    "./template-parts/blocks/contact_footer/*.php",
+    "./template-parts/blocks/hero/*.php",
+    "./template-parts/blocks/intro_slider/*.php",
+    "./template-parts/blocks/slt/*.php",
+    "./template-parts/blocks/srt/*.php",
+    "./template-parts/blocks/video_embed/*.php",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
